@@ -14,8 +14,7 @@
   <link rel="stylesheet" type="text/css" href="coming-sssoon.css">
   <link rel="stylesheet" type="text/css" href="bootstrap.css">
 
-  <!-- Google Fonts & Bootstrap Icons CDN-->
-  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+  <!-- Google Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
 	
 </head>
@@ -73,7 +72,7 @@
                 		<form method ="GET" action="thankyouspanish.html" class="form-inline" role="form">
                           <div class="form-group">
                             <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                            <input type="email" name="email" class="form-control transparent" placeholder="Tu correo electrónico aquí..."/>
+                            <input type="email" name="email" class="form-control transparent" placeholder="Tu correo electrónico aquí..." oninvalid="setCustomValidity('Por favor ingrese una dirección de correo electrónico válida')" oninput="setCustomValidity('')" required/>
                           </div>
                           <button class="btn btn-warning btn-fill">Notificarme</button>
                         </form>
@@ -84,7 +83,6 @@
      </div>
      <div class="footer">
       <div class="container">
-             Derivado de <a href="http://www.creative-tim.com">Creative Tim</a> con <i class="fa fa-heart heart"></i>. 
              Desarrollado por Eme Martin
       </div>
      </div> 
